@@ -1,0 +1,12 @@
+body::-webkit-scrollbar {
+    display: none;
+}
+
+body {
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('background.jpg');
+    background-size: cover;
+    min-height: 100vh;
+    
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
