@@ -5,8 +5,19 @@ body::-webkit-scrollbar {
 body {
     background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('background.jpg');
     background-size: cover;
+    background-blend-mode: multiply ;
     min-height: 100vh;
     
     -ms-overflow-style: none;  /* IE and Edge */
     scrollbar-width: none;  /* Firefox */
+}
+
+.main_body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+
+    background-image: url('desktop_background.png');
+    background-size: cover;
+    background-position: center center;
 }
