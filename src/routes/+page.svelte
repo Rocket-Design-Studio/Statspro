@@ -15,6 +15,10 @@
 		display: flex;
 		flex-direction: column;
 
+		background-image: url('desktop_background.png');
+    background-size: cover;
+    background-position: center center;
+
 		.sport_images {
 
 			display: flex;
