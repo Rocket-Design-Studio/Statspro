@@ -1,5 +1,5 @@
-<div class="visual_cvs">
-	<div class="visual_cvs_content">
+<div class="work_with_us">
+	<div class="work_with_us_content">
 		<h2>WORK WITH US - JOIN OUR TEAM</h2>
 
             <p class="work_for_us_content_paragraph">
@@ -57,14 +57,14 @@
 
 <style lang="scss">
 
-	.visual_cvs {
+	.work_with_us {
 		display: flex;
 		flex: 1;
 		flex-direction: column;
 
 		height: 100%;
 
-		.visual_cvs_content {
+		.work_with_us_content {
 			text-align: center;
 
 			padding: 0% 25%;
