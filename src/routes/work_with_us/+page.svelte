@@ -38,6 +38,7 @@
             <br>
 
             <div class="landing_page_login_form_buttonbox">
+              <!-- svelte-ignore security-anchor-rel-noreferrer -->
               <a href="https://goo.gl/forms/puR9A8Sa6FFOQkT52" target="_blank">
                 <input class="landing_page_login_form_button" type="button" value="APPLICATION LINK">
               </a>
