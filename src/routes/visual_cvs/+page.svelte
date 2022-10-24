@@ -1,5 +1,5 @@
-<div class="products_and_services">
-	<div class="products_and_services_content">
+<div class="visual_cvs">
+	<div class="visual_cvs_content">
 		<h2 >VISUAL CV's</h2>
 
         <div class="promo_video">
@@ -19,14 +19,14 @@
 
 <style lang="scss">
 
-	.products_and_services {
+	.visual_cvs {
 		display: flex;
 		flex: 1;
 		flex-direction: column;
 
 		height: 100%;
 
-		.products_and_services_content {
+		.visual_cvs_content {
 			text-align: center;
 
 			padding: 0% 25%;
