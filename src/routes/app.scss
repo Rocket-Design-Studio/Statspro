@@ -3,7 +3,7 @@ body::-webkit-scrollbar {
 }
 
 body {
-    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('background.jpg');
+    background:  url('background.jpg');
     background-size: cover;
     background-blend-mode: multiply ;
     min-height: 100vh;
