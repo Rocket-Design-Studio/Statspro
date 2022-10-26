@@ -1,5 +1,5 @@
 <script lang="ts">
-    import './header.scss';
+    import './Header.scss';
 </script>
 
 <div class="main_header">
