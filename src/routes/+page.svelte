@@ -1,11 +1,11 @@
 <div class="body_home">
-<div class="sport_images">
-	<div class="image_1"></div>
-	<div class="image_2"></div>
-	<div class="image_3"></div>
-	<div class="image_4"></div>
-	<div class="image_5"></div>
-</div>
+	<div class="sport_images">
+		<div class="image_1" />
+		<div class="image_2" />
+		<div class="image_3" />
+		<div class="image_4" />
+		<div class="image_5" />
+	</div>
 </div>
 
 <style lang="scss">
@@ -16,11 +16,10 @@
 		flex-direction: column;
 
 		background-image: url('desktop_background.png');
-    background-size: cover;
-    background-position: center center;
+		background-size: cover;
+		background-position: center center;
 
 		.sport_images {
-
 			display: flex;
 			flex-direction: row;
 

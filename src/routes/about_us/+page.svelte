@@ -30,18 +30,7 @@
 					engineer, Pottie is adding massive value to the business. He is based in Johannesburg
 				</p>
 			</div>
-			<div class="about_us_column">
-				<div class="about_us_meet_the_team_image_box">
-					<img src="Shaun_foto.jpeg" alt="" />
-				</div>
 
-				<h3>Shaun Lewis</h3>
-
-				<p>
-					Shaun joined our staff fresh out of ETA as a fulltime rugby coder and analyst. His
-					positive attitude and good work ethic has made him a valuable member of the team.
-				</p>
-			</div>
 			<div class="about_us_column">
 				<div class="about_us_meet_the_team_image_box">
 					<img src="AdriBrand.jpg" alt="" />

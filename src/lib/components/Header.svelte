@@ -14,7 +14,7 @@
         </ul>
     </div>
     <div class="header_right">
-        <a href="/">LOGIN |REGISTER</a>
+        <a href="https://playpro.co.za/sign%20in">LOGIN |REGISTER</a>
     </div>
 
 </div>

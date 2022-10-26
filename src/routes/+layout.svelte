@@ -6,11 +6,7 @@
 
 </script>
 
-<svelte:head>
-	<title>Statspro</title>
-	<meta name="robots" content="noindex nofollow" />
-	<html lang="en" />
-</svelte:head>
+
 
 <div class="main_body">
     <Header />
