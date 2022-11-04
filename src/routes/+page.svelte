@@ -1,3 +1,5 @@
+
+
 <div class="body_home">
 	<div class="sport_images">
 		<div class="image_1" />
@@ -6,6 +8,8 @@
 		<div class="image_4" />
 		<div class="image_5" />
 	</div>
+
+
 </div>
 
 <style lang="scss">
