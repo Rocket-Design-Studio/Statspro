@@ -6,7 +6,9 @@ const config = {
 	kit: {
 		adapter: adapter(),
 	},
-	preprocess: preprocess({}),
+	preprocess: preprocess({
+		postcss: true,
+	}),
 };
 
 export default config;
