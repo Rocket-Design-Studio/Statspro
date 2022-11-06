@@ -20,7 +20,7 @@
         font-style: normal;
         font-weight: 500;
         src: url('../../lib/components/Fonts/BRUSHSCI.TTF');
-        src: local(''), url('../../lib/components/Fonts/BRUSHSCI.TTF') format('ttf');
+        src: local(''), url('../../lib/components/Fonts/BRUSHSCI.TTF') format('woff');
     }
 
 

@@ -19,7 +19,7 @@
 		display: flex;
 		flex-direction: column;
 
-		background-image: url('background.png');
+		background-image: url('background.jpg');
 		background-size: cover;
 		background-position: center center;
 
@@ -145,6 +145,7 @@
 				}
 
 				.image_3 {
+					display: block;
 					width: 90vw;
 					height: 90vw;
 				}
@@ -172,8 +173,9 @@
 				}
 
 				.image_3 {
-					width: 90vw;
-					height: 90vw;
+					display: block;
+					width: 45vw;
+					height: 45vw;
 				}
 			}
 		}
@@ -196,9 +198,15 @@
 					display: none;
 				}
 
-				.image_2, .image_3, .image_4 {
-					width: 45vw;
-					height: 45vw;
+				.image_3  {
+					width: 45vw !important;
+					height: 45vw !important;
+				}
+
+				.image_2, .image_4 {
+					display: block;
+					width: 30vw !important;
+					height: 30vw !important;
 				}
 			}
 		}
@@ -216,15 +224,20 @@
 			}
 
 			.sport_images {
-				.image_1,
-				
+				.image_1,				
 				.image_5 {
 					display: none;
 				}
 
-				.image_2, .image_3, .image_4 {
-					width: 30vw;
-					height: 30vw;
+				.image_3  {
+					width: 45vw !important;
+					height: 45vw !important;
+				}
+
+				.image_2, .image_4 {
+					display: block;
+					width: 30vw !important;
+					height: 30vw !important;
 				}
 			}
 		}
