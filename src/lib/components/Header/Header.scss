@@ -1,0 +1,15 @@
+.main_header {
+
+
+	background: rgba(0, 0, 0, 0.6);
+
+	.flex-col.mt-8.space-y-4.md\:flex.md\:space-y-0.md\:flex-row.md\:items-center.md\:space-x-10.md\:mt-0.flex {
+		position: absolute;
+		width: 100vw;
+		background: rgba(0, 0, 0, 0.6);
+		margin: 0;
+		padding: 3em;
+		left: 0;
+	}
+	
+}
