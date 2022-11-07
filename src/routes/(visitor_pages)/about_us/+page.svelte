@@ -1,5 +1,4 @@
-<div class="about_us">
-	<div class="about_us_content">
+<div class="about_us_content">
 		<h2>ABOUT US</h2>
 
 		<div class="about_us_row">
@@ -46,44 +45,37 @@
 		</div>
 	</div>
 
-	<div class="sport_row">
-		<div class="sport_images">
-			<div class="image_1" />
-			<div class="image_2" />
-			<div class="image_3" />
-			<div class="image_4" />
-			<div class="image_5" />
-		</div>
-	</div>
-</div>
-
 <style lang="scss">
-	.about_us {
-		display: flex;
-		flex: 1;
-		flex-direction: column;
-
-		height: 100%;
 
 		.about_us_content {
 			text-align: center;
 
 			width: 100;
 			flex-direction: column;
-			margin: auto;
+
 			align-items: center;
+
+			padding-top: 5vh;
 
 			h2 {
 				padding-bottom: 1em;
+
+				font-size: 150%;
+				line-height: 100%;
 			}
 
-			.about_us_row,
-			.partner_row {
+			
+
+			.about_us_row {
 				display: flex;
 				flex-direction: row;
 
 				align-items: flex-start;
 			}
+
+
+
+
 			.about_us_column {
 				width: 33.3%;
 				padding-left: 2vw;
@@ -91,80 +83,91 @@
 
                 width: 100%;
 
-                margin-left: auto;
-                margin-right: auto;
+				h3 {
+					font-size: 120%;
+					font-weight: bold;
+				}
+
 			}
 
             .about_us_meet_the_team_image_box {
-                padding-bottom: 2em;
+                margin-bottom: 2em;
             }
 
 			.about_us_meet_the_team_image_box img {
-				width: 10vw;
-				height: 10vw;
+				width: 15vw;
+				height: 15vw;
 				object-fit: cover;
 				border: 2px #FC5200 solid;
 				border-radius: 50%;
                 margin: auto;
 			}
-		}
 
-		.sport_row {
-			display: flex;
-
-			width: 100vw;
-
-			background-image: url('Line.png');
-			background-repeat: no-repeat;
-			background-position: center center;
-			background-repeat: repeat-x;
-
-			align-self: center;
-
-			.sport_images {
-				display: flex;
-				flex-direction: row;
-
-				margin: auto;
-
-				align-items: center;
-
-				.image_1 {
-					background-image: url('Soccer.png');
-					background-size: contain;
-					background-position: center center;
-					height: 200px;
-					width: 141.39px;
+			@media (max-width: 640px) {
+				.about_us_row {
+				flex-direction: column;
 				}
-				.image_2 {
-					background-image: url('Netball.png');
-					background-size: contain;
-					background-position: center center;
-					height: 200px;
-					width: 141.39px;
+
+				.about_us_meet_the_team_image_box {
+					margin-top: 2em;
+                margin-bottom: 2em;
+            }
+
+				.about_us_meet_the_team_image_box img {
+				width: 60vw !important;
+				height: 60vw !important;
+				object-fit: cover;
+				border: 2px #FC5200 solid;
+				border-radius: 50%;
+                margin: auto;
+				
+			}
+
+
+			}
+
+			@media (max-width: 768px) {
+				.about_us_row {
+					flex-direction: column;
 				}
-				.image_3 {
-					background-image: url('Rugby.png');
-					background-size: contain;
-					background-position: center center;
-					height: 300px;
-					width: 212.09px;
+
+				.about_us_meet_the_team_image_box {
+					margin-top: 2em;
+                margin-bottom: 2em;
+            }
+
+				.about_us_meet_the_team_image_box img {
+				width: 50vw !important;
+				height: 50vw !important;
+				object-fit: cover;
+				border: 2px #FC5200 solid;
+				border-radius: 50%;
+                margin: auto;
+				
+			}
+			}
+
+			@media (max-width: 1024px) {
+				
+				.about_us_row {
+					flex-direction: column;
 				}
-				.image_4 {
-					background-image: url('Hockey.png');
-					background-size: contain;
-					background-position: center center;
-					height: 200px;
-					width: 141.39px;
-				}
-				.image_5 {
-					background-image: url('Waterpolo.png');
-					background-size: contain;
-					background-position: center center;
-					height: 200px;
-					width: 141.39px;
-				}
+
+				.about_us_meet_the_team_image_box {
+					margin-top: 2em;
+                margin-bottom: 2em;
+            }
+
+				.about_us_meet_the_team_image_box img {
+				width: 40vw;
+				height: 40vw;
+				object-fit: cover;
+				border: 2px #FC5200 solid;
+				border-radius: 50%;
+                margin: auto;
+				
+			}
 			}
 		}
-	}
+
 </style>

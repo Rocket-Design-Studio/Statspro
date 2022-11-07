@@ -1,0 +1,47 @@
+.sport_images {
+    width: 100vw;
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    background-image: url('Line.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    margin-top: 2vh;
+
+
+
+    .image_1, .image_2, .image_3, .image_4 ,.image_5  {
+        background-size: contain;
+        background-position: center center;
+        background-repeat: no-repeat;
+        height: 16vw;
+        width: 16vw;
+    }
+
+    .image_1 {
+        background-image: url('Soccer.png');
+    }
+
+    .image_2 {
+        background-image: url('Netball.png');
+    }
+
+    .image_3 {
+        background-image: url('Rugby.png');
+
+        height: 22vw;
+        width: 22vw;
+    }
+
+    .image_4 {
+        background-image: url('Hockey.png');
+    }
+
+    .image_5 {
+        background-image: url('Waterpolo.png');
+    }
+}

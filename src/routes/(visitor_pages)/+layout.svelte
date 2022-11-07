@@ -14,3 +14,12 @@
         <slot />
     <Footer />
 </div>
+
+<style lang="scss">
+    .main_body {
+        
+        display: flex;
+        flex-direction: column;
+
+    }
+</style>

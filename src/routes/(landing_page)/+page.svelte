@@ -19,10 +19,6 @@
 		display: flex;
 		flex-direction: column;
 
-		background-image: url('background.jpg');
-		background-size: cover;
-		background-position: center center;
-
 		display: flex;
 
 		.title {
@@ -44,6 +40,10 @@
 
 				font-size: 15vh;
 				line-height: 10vh;
+
+				font-family: "Myriad Pro";
+
+
 				span {
 					font-family: 'Brush Script MT';
 					font-size: 180%;

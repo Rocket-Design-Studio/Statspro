@@ -23,6 +23,14 @@
         src: local(''), url('../../lib/components/Fonts/BRUSHSCI.TTF') format('woff');
     }
 
+    @font-face {
+        font-family: "Myriad Pro";
+        font-style: normal;
+        font-weight: 500;
+        src: url('../../lib/components/Fonts/MYRIADPRO.woff');
+        src: local(''), url('../../lib/components/Fonts/MYRIADPRO.woff') format('woff');
+    }
+
 
     .main_body {
         height: 100vh;
