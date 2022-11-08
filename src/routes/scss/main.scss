@@ -1,0 +1,12 @@
+body {
+    background:  url('background.jpg');
+    background-size: cover;
+    background-blend-mode: multiply ;
+    min-height: 100vh;
+
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}

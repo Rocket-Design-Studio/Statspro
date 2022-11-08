@@ -7,6 +7,12 @@
         function toggleNavbar() {
             showMenu = !showMenu;
         }
+
+        import { page } from '$app/stores';
+    let path;
+
+    $: path = $page.url.pathname;
+
     </script>
     
     <header>

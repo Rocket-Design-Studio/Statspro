@@ -1,7 +1,9 @@
 <script lang="ts">
-    import '../scss/reset.scss';
-    import '../scss/typography.scss';
-    import '../scss/app.scss';
+    import '$scss/reset.scss';
+    import '$scss/typography.scss';
+    import '$scss/app.scss';
+    import '$scss/main.scss';
+    
 	import Header from '../../lib/components/Header/Header.svelte';
     import Footer from '../../lib/components/Footer/Footer.svelte';
 

@@ -6,6 +6,10 @@ import preprocess from 'svelte-preprocess';
 const config = {
 	kit: {
 		adapter: adapter(),
+		alias : {
+			$db: './src/db',
+			$scss: './src/routes/scss',
+		}
 	},
 	preprocess: preprocess({
 		postcss: true,
