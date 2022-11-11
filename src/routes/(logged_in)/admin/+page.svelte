@@ -88,14 +88,14 @@
 	let isPlayers = true;
 </script>
 
-<div class="Admin_Dashboard">
-	<div class="Toggels">
+<div class="admindashboard">
+	<div class="toggel">
 		<button on:click={() => (isClubs = !isClubs)}>Toggle Clubs</button>
 		<button on:click={() => (isTeams = !isTeams)}>Toggle Teams</button>
 		<button on:click={() => (isPlayers = !isPlayers)}>Toggle Players</button>
 	</div>
 
-	<div class="container grid md:grid-3 md:grid-rows-3 gap-6">
+	<div class="container grid md:grid-4 md:grid-rows-4 gap-6">
 		{#if isClubs}
 			<div class="clubs cell-1 md:cell-2 box flat">
 				<h2>Clubs</h2>
@@ -153,7 +153,7 @@
 		{/if}
 
 		{#if isPlayers}
-			<div class="players cell-1 md:cell-2 box flat ">
+			<div class="players cell-2 md:cell-2 box flat ">
 				<h2>Players</h2>
 				<div class="sport">
 					<div>
@@ -179,12 +179,13 @@
 				</div>
 			</div>
 		{/if}
+
 	</div>
 </div>
 
 <style lang="scss">
 	
-	.Admin_Dashboard {
+	.admindashboard {
 		flex: 1;
 
 		display: flex;
@@ -193,9 +194,12 @@
 		height: 100vh;
 		width: 100%;
 
-		.Toggles {
+		.toggel {
 			display: flex;
 			flex-direction: row;
+
+			width: 100%;
+			padding: 5px;
 
 			justify-content: flex-end;
 			align-items: center;
@@ -203,6 +207,14 @@
 			align-self: flex-end;
 
 			background: rgba(0, 0, 0, 0.6);
+
+			button {
+				padding-left: 1rem;
+			}
+
+			button:hover {
+				color: #fc5200;
+			}
 		}
 
 		.container {
@@ -267,27 +279,6 @@
 		box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.16);
 	}
 
-	@keyframes bounce {
-		from {
-			margin-left: 6px;
-			margin-right: 0;
-		}
-		50% {
-			margin-left: 2px;
-			margin-right: 4px;
-		}
-		to {
-			margin-left: 6px;
-			margin-right: 0;
-		}
-	}
-
-	/***** GRID ******/
-	[class^='grid'] {
-		display: grid;
-		grid-gap: 1rem;
-	}
-
 	@media screen and (min-width: 640px), print {
 		.sm\:grid-2 {
 			grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -343,18 +334,6 @@
 	.gap-10,
 	.gap-10 [class^='grid'] {
 		gap: 2.5rem;
-	}
-
-	/* DO NOT COPY, just for Code Library resource */
-	.chart-placeholder {
-		background-color: #fff1f1;
-		height: 350px;
-	}
-	.chart-placeholder:before {
-		display: block;
-		font-size: 2rem;
-		margin: 0.2rem 0.5rem;
-		content: 'Chart';
 	}
 
 	.hidden {
