@@ -1,7 +1,7 @@
 <script lang="ts">
 	import './scss/admin.scss';
 
-	import Sidebar from './components/Sidebar.svelte';
+	import Sidebar from '$lib/components/Sidebar/Admin/Sidebar.svelte';
 </script>
 
 <div class="admin">

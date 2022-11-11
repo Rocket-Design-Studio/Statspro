@@ -7,8 +7,8 @@ const config = {
 	kit: {
 		adapter: adapter(),
 		alias : {
-			$db: './src/db',
-			$scss: './src/routes/scss',
+			$db: 'src/db',
+			$scss: 'src/scss',
 		}
 	},
 	preprocess: preprocess({

@@ -1,6 +1,6 @@
 <script>
     import './Header.scss';
-    import '../../../routes/scss/app.scss';
+    import '$scss/app.scss';
     
         let showMenu = false;
     

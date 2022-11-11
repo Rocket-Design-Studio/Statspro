@@ -7,7 +7,7 @@
 </script>
 
 <div class="content">
-	<h3>Sport</h3>
+	<h3>Roles</h3>
 
 	{#each roles as role}
 		<p>{role.name}</p>
