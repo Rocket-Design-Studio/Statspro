@@ -90,9 +90,27 @@
 
 <div class="admindashboard">
 	<div class="toggel">
-		<button on:click={() => (isClubs = !isClubs)}>Toggle Clubs</button>
-		<button on:click={() => (isTeams = !isTeams)}>Toggle Teams</button>
-		<button on:click={() => (isPlayers = !isPlayers)}>Toggle Players</button>
+		<div class="group">
+			<p>Clubs</p>
+			<label class="container">
+				<input type="checkbox" id="clubs" label="Clubs" bind:checked={isClubs} />
+				<span class="checkmark" />
+			</label>
+		</div>
+		<div class="group">
+			<p>Teams</p>
+			<label class="container">
+				<input type="checkbox" id="teams" label="Teams" bind:checked={isTeams} />
+				<span class="checkmark" />
+			</label>
+		</div>
+		<div class="group">
+			<p>Players</p>
+			<label class="container">
+				<input type="checkbox" id="players" label="Players" bind:checked={isPlayers} />
+				<span class="checkmark" />
+			</label>
+		</div>
 	</div>
 
 	<div class="container grid md:grid-4 md:grid-rows-4 gap-6">
@@ -179,12 +197,10 @@
 				</div>
 			</div>
 		{/if}
-
 	</div>
 </div>
 
 <style lang="scss">
-	
 	.admindashboard {
 		flex: 1;
 
@@ -207,6 +223,62 @@
 			align-self: flex-end;
 
 			background: rgba(0, 0, 0, 0.6);
+
+			.group {
+				padding-right: 20px;
+
+				display: flex;
+				flex-direction: row;
+
+				input {
+					position: absolute;
+					opacity: 0;
+					cursor: pointer;
+					height: 0;
+					width: 0;
+				}
+
+				.checkmark {
+					position: relative;
+					top: 0;
+					left: 10px;
+					height: 25px;
+					width: 25px;
+					background-color: #eee;
+					border-radius: 15%;
+				}
+
+				.checkmark:after {
+					content: '';
+					position: absolute;
+					display: none;
+				}
+			}
+
+			.container:hover input ~ .checkmark {
+				background-color: #ccc;
+			}
+
+			.container input:checked ~ .checkmark {
+				background-color: #fc5200;
+			}
+
+			.container input:checked ~ .checkmark:after {
+				display: block;
+			}
+
+			/* Style the checkmark/indicator */
+			.container .checkmark:after {
+				left: 9px;
+				top: 5px;
+				width: 5px;
+				height: 10px;
+				border: solid white;
+				border-width: 0 3px 3px 0;
+				-webkit-transform: rotate(45deg);
+				-ms-transform: rotate(45deg);
+				transform: rotate(45deg);
+			}
 
 			button {
 				padding-left: 1rem;
@@ -285,6 +357,24 @@
 		}
 	}
 	@media screen and (min-width: 768px), print {
+		.md\:grid-2 {
+			grid-template-columns: repeat(2, minmax(0, 1fr));
+		}
+
+		.md\:grid-3 {
+			grid-template-columns: repeat(2, minmax(0, 1fr));
+		}
+
+		.md\:grid-4 {
+			grid-template-columns: repeat(3, minmax(0, 1fr));
+		}
+
+		.md\:grid-rows-3 {
+			grid-template-rows: repeat(3, minmax(0, 1fr));
+		}
+	}
+
+	@media screen and (min-width: 1024px), print {
 		.md\:grid-2 {
 			grid-template-columns: repeat(2, minmax(0, 1fr));
 		}

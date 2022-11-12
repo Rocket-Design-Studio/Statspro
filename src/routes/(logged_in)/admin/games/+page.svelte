@@ -7,10 +7,14 @@
 
 	$: ({ games } = data);
 
-	let items = data.games;
+	let unsortedItems = data.games.sort(
+		(a: any, b: any) => {
+			return new Date(b.kickOffTime) - new Date(a.kickOffTime);
+	});
+
+	let items = unsortedItems;
 
 	let amount = Object.keys(data.games).length;
-	console.log(amount);
 
 	let currentPage = 1;
 	let pageSize = 8;
@@ -31,7 +35,7 @@
 							<td class="endCell">{game.againstTeam.name}</td>
 						</tr>
 					</table>
-					<p>{game.kickOffTime}</p>
+					<p>{new Date(game.kickOffTime).toLocaleString("en-ZA", {year : 'numeric', month: "2-digit", day: "2-digit"})} - {new Date(game.kickOffTime).toLocaleString("en-ZA", {hour: 'numeric', minute: '2-digit'})}</p>
 				</div>
 			{/each}
 		</div>
@@ -72,6 +76,7 @@
 			}
 
 			padding-bottom: 2rem;
+			height: 100%;
 
 			.game {
 				flex: 1;
@@ -80,7 +85,11 @@
 				flex-direction: column;
 
 				align-items: center;
-				justify-content: space-between;
+				justify-content: start;
+				margin-top: auto;
+				margin-bottom: auto;
+
+				height: 100%;
 
 				.match {
 					width: 60%;
@@ -90,6 +99,8 @@
 					border-radius: 10px;
 
 					padding: 0.5em;
+
+					margin: auto;
 
 					table {
 						width: 100%;
