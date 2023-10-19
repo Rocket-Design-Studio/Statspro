@@ -1,0 +1,495 @@
+@import url('../scss/reset.scss');
+@import url('../scss/typography.scss');
+@import url('../scss/app.scss');
+
+.body {
+	flex: 1;
+	min-height: calc(100vh - 2rem);
+}
+
+header,
+footer {
+	width: 100vw;
+	overflow: hidden;
+
+	background: rgba(0, 0, 0, 0.8);
+
+	display: flex;
+	flex-direction: row;
+
+	align-items: center;
+	justify-content: center;
+
+	padding: 1rem;
+	min-height: 4rem;
+
+	.menu {
+		display: flex;
+		flex-direction: row;
+		width: 100%;
+		align-items: center;
+
+		.left {
+			flex: 1;
+
+			padding-left: 2rem;
+
+			ul {
+				list-style: none;
+				margin: 0;
+				padding: 0;
+
+				li {
+					text-decoration: none;
+
+					display: inline;
+
+					padding-right: 2rem;
+
+					a {
+						text-decoration: none;
+
+						font-size: 18px;
+						color: azure;
+					}
+				}
+			}
+		}
+
+		.right {
+			padding-right: 2rem;
+
+			a {
+				display: block;
+				width: 200px;
+				height: 44px;
+				background: rgba(0, 0, 0, 0);
+				outline: 3px solid #fc5200;
+				text-align: center;
+				border-radius: 15px;
+				color: #fc5200;
+				font-weight: bold;
+				line-height: 44px;
+			}
+
+			a:hover {
+				background: #fc5200;
+				outline: 3px solid #000;
+				color: #000;
+			}
+		}
+	}
+
+	.mobile-menu {
+		z-index: 10;
+		button {
+			background: none;
+			border: none;
+
+			svg {
+				height: 2.5rem;
+
+				path {
+					fill: #fc5200;
+				}
+			}
+		}
+	}
+}
+
+.mobile-full-menu {
+	position: fixed;
+	top: 0;
+	left: 0;
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	height: 100%;
+	background: rgb(0, 0, 0);
+	align-items: center;
+	justify-content: space-evenly;
+
+	ul {
+		list-style: none;
+		margin: 0;
+		padding: 0;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+
+		li {
+			text-decoration: none;
+
+			a {
+				text-decoration: none;
+
+				font-size: 18px;
+				color: azure;
+			}
+		}
+
+		li:last-child {
+			text-decoration: none;
+
+			margin-top: 1rem;
+			padding: 1rem;
+
+			a {
+				display: block;
+				width: 200px;
+				height: 44px;
+				background: rgba(0, 0, 0, 0);
+				outline: 3px solid #fc5200;
+				text-align: center;
+				border-radius: 15px;
+				color: #fc5200;
+				font-weight: bold;
+				line-height: 44px;
+			}
+
+			a:hover {
+				background: #fc5200;
+				outline: 3px solid #000;
+				color: #000;
+			}
+		}
+	}
+}
+
+/* Media Query for Mobile Devices */
+@media (max-width: 480px) {
+	.menu {
+		display: none !important;
+	}
+	.mobile-menu {
+		display: flex;
+	}
+}
+
+/* Media Query for low resolution  Tablets, Ipads */
+@media (min-width: 481px) and (max-width: 767px) {
+	.menu {
+		display: none !important;
+	}
+	.mobile-menu {
+		display: flex;
+	}
+}
+
+/* Media Query for Tablets Ipads portrait mode */
+@media (min-width: 768px) and (max-width: 1024px) {
+	.menu {
+		display: none !important;
+	}
+	.mobile-menu {
+		display: flex;
+	}
+}
+
+/* Media Query for Laptops and Desktops */
+@media (min-width: 1025px) and (max-width: 1280px) {
+	.menu {
+		display: flex;
+	}
+	.mobile-menu {
+		display: none;
+	}
+}
+
+/* Media Query for Large screens */
+@media (min-width: 1281px) {
+	.menu {
+		display: flex;
+	}
+	.mobile-menu {
+		display: none;
+	}
+}
+
+.line {
+	height: 1rem;
+	width: 100%;
+	background: #fc5200;
+
+	position: fixed;
+
+	top: 55%;
+	left: 0;
+	z-index: 1;
+}
+
+.line-top {
+	position: fixed;
+	color: #fff;
+
+	font-size: 30vh;
+
+	text-align: center;
+
+	top: calc(50vh - 35vh);
+	left: 0;
+	z-index: 1;
+	width: 100%;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	opacity: 0.3;
+	mix-blend-mode: soft-light;
+}
+
+.line-bottom {
+	position: fixed;
+	color: #fff;
+
+	font-size: 20vh;
+
+	text-align: center;
+
+	top: calc(51vh);
+	left: 0;
+	z-index: 1;
+	width: 100%;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	opacity: 0.3;
+	mix-blend-mode: soft-light;
+}
+
+.home {
+	height: calc(100dvh);
+	overflow: hidden;
+	flex: 1;
+
+	display: flex;
+	flex-direction: column;
+
+	.sport_images {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		justify-content: center;
+
+		flex: 1;
+		height: 100%;
+		z-index: 2;
+
+		overflow: hidden !important;
+
+
+		.image_1 {
+			background-image: url('Soccer.png');
+			background-size: contain;
+			background-position: center center;
+			background-repeat: no-repeat;
+			width: 15vw;
+			aspect-ratio: 1/2;
+		}
+
+		.image_2 {
+			background-image: url('Netball.png');
+			background-size: contain;
+			background-position: center center;
+			background-repeat: no-repeat;
+			width: 15vw;
+			aspect-ratio: 1/2;
+		}
+
+		.image_3 {
+			background-image: url('Rugby.png');
+			background-size: contain;
+			background-position: center center;
+			background-repeat: no-repeat;
+			width: 25vw;
+			aspect-ratio: 1/2;
+		}
+
+		.image_4 {
+			background-image: url('Hockey.png');
+			background-size: contain;
+			background-position: center center;
+			background-repeat: no-repeat;
+			width: 15vw;
+			aspect-ratio: 1/2;
+		}
+
+		.image_5 {
+			background-image: url('Waterpolo.png');
+			background-size: contain;
+			background-position: center center;
+			background-repeat: no-repeat;
+			width: 15vw;
+			aspect-ratio: 1/2;
+		}
+	}
+}
+
+.about,
+.contact,
+.work,
+.cvs,
+.products {
+	min-height: calc(100dvh - 120px);
+	overflow: hidden;
+	flex: 1;
+
+	display: flex;
+	flex-direction: column;
+}
+
+.products {
+	display: flex;
+	flex: 1;
+	flex-direction: column;
+
+	.products_content {
+		text-align: center;
+
+		padding: 0% 10rem;
+
+		flex-direction: column;
+		margin: auto;
+		align-items: center;
+
+		h2 {
+			padding-bottom: 1em;
+		}
+
+		.features,
+		.team-analysis,
+		.match-graphs {
+			margin-top: 1rem;
+			width: 100%;
+			display: flex;
+			flex-direction: column;
+			justify-content: flex-start;
+			align-items: center;
+
+			.row {
+				margin-top: 1rem;
+				width: 100%;
+				display: flex;
+				flex-direction: row;
+				justify-content: space-evenly;
+				align-items: flex-start;
+
+				.column {
+					flex: 1;
+					display: flex;
+					flex-direction: column;
+					align-items: center;
+					justify-content: center;
+				}
+			}
+
+			ul {
+				list-style: none;
+				margin-top: 1rem;
+			}
+		}
+	}
+}
+
+.sport_row {
+	display: flex;
+
+	width: 100vw;
+
+	background-image: url('Line.png');
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-repeat: repeat-x;
+
+	align-self: center;
+
+	.sport_images {
+		display: flex;
+		flex-direction: row;
+
+		margin: auto;
+
+		align-items: center;
+
+		.image_1 {
+			background-image: url('Soccer.png');
+			background-size: contain;
+			background-position: center center;
+			background-repeat: no-repeat;
+			width: 15vw;
+			aspect-ratio: 1;
+		}
+		.image_2 {
+			background-image: url('Netball.png');
+			background-size: contain;
+			background-position: center center;
+			background-repeat: no-repeat;
+			width: 15vw;
+			aspect-ratio: 1;
+		}
+		.image_3 {
+			background-image: url('Rugby.png');
+			background-size: contain;
+			background-position: center center;
+			background-repeat: no-repeat;
+			width: 20vw;
+			aspect-ratio: 1;
+		}
+		.image_4 {
+			background-image: url('Hockey.png');
+			background-size: contain;
+			background-position: center center;
+			background-repeat: no-repeat;
+			width: 15vw;
+			aspect-ratio: 1;
+		}
+		.image_5 {
+			background-image: url('Waterpolo.png');
+			background-size: contain;
+			background-position: center center;
+			background-repeat: no-repeat;
+			width: 15vw;
+			aspect-ratio: 1;
+		}
+	}
+}
+
+.splide__slide {
+	display: flex;
+    justify-content: center;
+	height: 35vh;
+}
+
+.splide__slide img {
+	height: 100%;
+	width: auto;
+}
+
+.pricing{
+	width: 100%;
+
+	.row {
+		width: 100%;
+		display: flex;
+		flex-direction: row;
+		gap: 1rem;
+		flex-wrap: wrap;
+		justify-content: center;
+		align-items: stretch;
+
+		.column {
+			border: 1px solid #fc5200;
+			border-radius: 2rem;
+			padding: 1rem;
+
+			min-width: 150px;
+			max-width: 300px;
+
+			.img {
+				height: 10rem;
+			}
+		}
+	}
+}
